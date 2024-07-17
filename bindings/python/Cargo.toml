@@ -19,9 +19,7 @@ numpy = "0.21"
 ndarray = "0.15"
 onig = { version = "6.4", default-features = false }
 itertools = "0.12"
-arrow = { git = "https://github.com/apache/arrow-rs", branch = "master", features = [
-    "pyarrow",
-], optional = true }
+arrow = { version = "52.0", features = ["pyarrow"], optional = true }
 
 [dependencies.tokenizers]
 path = "../../tokenizers"
